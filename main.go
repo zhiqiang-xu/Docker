@@ -12,8 +12,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	panic(err)
   }
 
-  fmt.Println("hostname:", name)
-  // fmt.Fprintf(w, "Hello, Kubernetes")
+ //  fmt.Println("hostname:", name)
+  fmt.Fprintf(w,"hostname: %s\n", name)
 }
 
 func main() {
